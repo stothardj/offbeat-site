@@ -1,0 +1,29 @@
+body {
+    background-color: #57a;
+    padding: 1em 0 0 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.inner {
+    margin: auto;
+    padding: 1em;
+    background-color: white;
+    border: solid 2px black;
+    max-width: 50em;
+}
+
+.pages {
+    border-bottom: 1px black solid;
+}
+
+.page {
+    text-decoration: none;
+    color: #57a;
+    padding-right: 2em;
+}
+
+.slant {
+    display: inline-block;
+    transform: rotate(8deg);
+}
