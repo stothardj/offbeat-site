@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Events{% endblock %}
 {% block content %}
-<p>Meetup is still the official source of upcoming and past events.</p>
+<p><a href="https://www.meetup.com/Offbeat-Fun">Meetup</a> is still the official source of upcoming and past events.</p>
+
+<h2>Upcoming Events</h2>
+<div id="upcomingevents"></div>
+{% endblock %}
+{% block script %}
+<script src="{{ url_for('static', filename='events.js') }}"></script>
 {% endblock %}

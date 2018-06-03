@@ -3,6 +3,7 @@ body {
     padding: 1em 0 0 0;
     margin: 0;
     font-family: Helvetica;
+    font-size: 12pt;
 }
 
 .inner {
@@ -27,3 +28,15 @@ body {
     display: inline-block;
     transform: rotate(8deg);
 }
+
+.event {
+    border-top: 2px solid black;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.event-name {
+    font-weight: bold;
+    font-size: 14pt;
+}
+

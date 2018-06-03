@@ -1,6 +1,9 @@
 # Emacs backup files
 *~
 
+# Secret
+meetupapikey
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
