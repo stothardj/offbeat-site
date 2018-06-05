@@ -1,5 +1,5 @@
 {% for event in events.results %}
-<div class="event">
+<div class="event {{ loop.cycle('odd', 'even') }}">
   <div class="event-name">{{ event.name }}</div>
   <div class="event-description">{{ event.description|safe }}</div>
 </div>

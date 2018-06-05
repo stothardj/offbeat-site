@@ -1,62 +1,27 @@
-body, h1, h2, h3, h4, h5, h6 {
-    font-size-adjust: 0.5;
+html {
+    font-size: 2vw;
 }
 
 body {
     background-color: #5a7;
-    padding: 1em 0 0 0;
-    margin: 0;
-    font-family: Helvetica;
-    font-size: 100%;
 }
 
-h1 {
-    font-size: 2em;
-    line-height: 1.25;
+@media only screen and (max-width: 600px) {
+    html {
+	font-size: 4vw;
+    }
 }
 
-h2 {
-    font-size: 1.625em;
-    line-height: 1.15384615;
+@media only screen and (max-width: 400px) {
+    html {
+	font-size: 8vw;
+    }
 }
 
 .inner {
-    font-size: 1em;
-    line-height: 1.25;
-    margin: auto;
-    padding: 1em;
+    padding: 1rem;
     background-color: white;
     border: solid 2px black;
-    max-width: 50em;
-}
-
-@media (min-width: 43.75em) {
-    .inner {
-	font-size: 1em;
-	line-height: 1.375;
-    }
-
-    h1 {
-	font-size: 2.5em;
-	line-height: 1.125;
-    }
-
-    h2 {
-	font-size: 2em;
-	line-height: 1.25;
-    }
-}
-
-@media (min-width: 56.25em) {
-    h1 {
-	font-size: 3em;
-	line-height: 1.05;
-    }
-
-    h2 {
-	font-size: 2.25em;
-	line-height: 1.25;
-    }
 }
 
 .pages {
@@ -66,8 +31,8 @@ h2 {
 .page {
     text-decoration: none;
     color: #5a7;
-    padding-right: 2em;
-    font-size: 2em;
+    padding-right: 2rem;
+    font-size: 1rem;
 }
 
 .slant {
@@ -76,13 +41,14 @@ h2 {
 }
 
 .event {
-    border-top: 2px solid black;
-    padding-bottom: 2em;
-    padding-top: 2em;
     word-break: break-word;
+    padding: 2px;
 }
 
 .event-name {
     font-weight: bold;
 }
 
+.event.odd {
+    background-color: #9fb;
+}
