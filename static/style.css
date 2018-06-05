@@ -1,5 +1,5 @@
 html {
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 body {
@@ -9,12 +9,6 @@ body {
 @media only screen and (max-device-width: 600px) {
     html {
 	font-size: 4vw;
-    }
-}
-
-@media only screen and (max-device-width: 400px) {
-    html {
-	font-size: 8vw;
     }
 }
 
@@ -33,6 +27,7 @@ body {
     color: #5a7;
     padding-right: 2rem;
     font-size: 1rem;
+    white-space: nowrap;
 }
 
 .slant {
