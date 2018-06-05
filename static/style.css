@@ -1,9 +1,8 @@
 body {
-    background-color: #57a;
+    background-color: #5a7;
     padding: 1em 0 0 0;
     margin: 0;
     font-family: Helvetica;
-    font-size: 12pt;
 }
 
 .inner {
@@ -20,7 +19,7 @@ body {
 
 .page {
     text-decoration: none;
-    color: #57a;
+    color: #5a7;
     padding-right: 2em;
 }
 
@@ -33,10 +32,10 @@ body {
     border-top: 2px solid black;
     padding-bottom: 2em;
     padding-top: 2em;
+    word-break: break-word;
 }
 
 .event-name {
     font-weight: bold;
-    font-size: 14pt;
 }
 
