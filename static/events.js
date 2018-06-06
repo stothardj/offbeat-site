@@ -1,5 +1,3 @@
-console.log('yay');
-
 function displayUpcomingEvents() {
     const upcomingeventsEl = document.getElementById('upcomingevents');
     if (this.status != 200) {

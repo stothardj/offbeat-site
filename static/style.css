@@ -1,21 +1,15 @@
-html {
-    font-size: 1vw;
-}
-
 body {
     background-color: #5a7;
-}
-
-@media only screen and (max-device-width: 600px) {
-    html {
-	font-size: 4vw;
-    }
+    text-size-adjust: none;
+    font-size: 2vmax;
 }
 
 .inner {
-    padding: 1rem;
+    padding: 1em;
     background-color: white;
     border: solid 2px black;
+    font-size: 1em;
+    line-height: 1.25;
 }
 
 .pages {
@@ -25,9 +19,9 @@ body {
 .page {
     text-decoration: none;
     color: #5a7;
-    padding-right: 2rem;
-    font-size: 1rem;
+    padding-right: 2em;
     white-space: nowrap;
+    font-size: 1.2em;
 }
 
 .slant {
@@ -46,4 +40,8 @@ body {
 
 .event.odd {
     background-color: #9fb;
+}
+
+.content {
+    margin-top: 1em;
 }
