@@ -1,7 +1,9 @@
 body {
     background-color: #5a7;
     text-size-adjust: none;
-    font-size: 2vmax;
+    font-size: calc(1.1em + 1vmin);
+    max-width: 1000px;
+    margin: auto;
 }
 
 .inner {
@@ -10,6 +12,7 @@ body {
     border: solid 2px black;
     font-size: 1em;
     line-height: 1.25;
+    margin: 1em;
 }
 
 .pages {
