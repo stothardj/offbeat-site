@@ -48,3 +48,13 @@ body {
 .content {
     margin-top: 1em;
 }
+
+.photoreel {
+    display: flex;
+    overflow: hidden;
+}
+
+.photo {
+    margin: 0;
+    padding: 0;
+}

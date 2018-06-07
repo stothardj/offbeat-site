@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
+<div class="photoreel">
+  <img class="photo" src="{{ url_for('static', filename='photoframe.png') }}">
+  <img class="photo" src="{{ url_for('static', filename='sandcastle.png') }}">
+  <img class="photo" src="{{ url_for('static', filename='karting.png') }}">
+</div>
 <p>This is a group for people in their 20s & early 30s looking to bond
   with cool new friends over quirky, fun activities. We're less about
   the happy hours and meeting over drinks (though they're bound to
@@ -10,4 +15,7 @@
   nights, etc.) to the more offbeat (puzzle hunts, obstacle courses,
   murder mysteries, etc.). If this sounds right up your alley, come
   join us for some random fun!</p>
+{% endblock %}
+{% block script %}
+<script src="{{ url_for('static', filename='index.js') }}"></script>
 {% endblock %}
