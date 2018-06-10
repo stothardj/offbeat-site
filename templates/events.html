@@ -1,7 +1,16 @@
 {% extends "base.html" %}
 {% block title %}Events{% endblock %}
+{% block pagebanner %}
+<div class="page-banner events-banner">
+  <h2 class="page-banner-title">Events</h2>
+  <ul class="horizontal-list">
+    <li class="horizontal-list"><a class="page-banner-link" href="#">Upcoming Events</a></li>
+    <li class="horizontal-list"><a class="page-banner-link" href="#">Past Events</a></li>
+  </ul>
+</div>
+{% endblock %}
 {% block content %}
-<p><a href="https://www.meetup.com/Offbeat-Fun">Meetup</a> is still the official source of upcoming and past events.</p>
+<p>Checkout <a href="https://www.meetup.com/Offbeat-Fun">Meetup</a> to see all events.</p>
 
 <h2>Upcoming Events</h2>
 <div id="upcomingevents"></div>

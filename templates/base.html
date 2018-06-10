@@ -5,14 +5,17 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
-    <div class="inner">
+    <div class="banner">
       <h1 class="title"><span class="slant">Off</span>beat Fun</h1>
-      <div class="pages">
-      	<a class="page" href="/">Home</a>
-      	<a class="page" href="/events">Events</a>
-      	<a class="page" href="/about">About</a>
-      	<a class="page" href="/contact">Contact Us</a>
+      <div class="page-links">
+      	<a class="page-link" href="/">Home</a>
+      	<a class="page-link" href="/events">Events</a>
+      	<a class="page-link" href="/about">About</a>
+      	<a class="page-link" href="/contact">Contact Us</a>
       </div>
+    </div>
+    <div class="page">
+      {% block pagebanner %}{% endblock %}
       <div class="content">
 	{% block content %}{% endblock %}
       </div>
