@@ -1,6 +1,19 @@
-{% for event in events.results %}
+{% for event in events %}
 <div class="event {{ loop.cycle('odd', 'even') }}">
-  <div class="event-name">{{ event.name }}</div>
+  <h3 class="event-name">{{ event.name }}</h3>
+  <div class="event-time">
+    <span class="unbroken">{{ event.start_time }}</span>
+    to
+    <span class="unbroken">{{ event.end_time }}</span>
+  </div>
+  <table class="event-rsvp-info">
+    <tr>
+      <td>Going</td><td>{{ event.yes_rsvp_count }} / {{ event.rsvp_limit }}</td>
+    </tr>
+    <tr>
+      <td>Waitlist</td><td>{{ event.waitlist_count }}</td>
+    </tr>
+  </table>
   <div class="event-description">{{ event.description|safe }}</div>
 </div>
 {% endfor %}

@@ -106,10 +106,25 @@ li.horizontal-list:last-child {
 
 .event-name {
     font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
+
+.event-time {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.event-rsvp-info {
+    float: right;
 }
 
 .event.odd {
     background-color: #48668b;
+}
+
+.event.odd a {
+    color: white;
 }
 
 .photoreel {
@@ -122,4 +137,8 @@ li.horizontal-list:last-child {
     margin: 0;
     padding: 0;
     flex: 0 0 auto;
+}
+
+.unbroken {
+    white-space: nowrap;
 }
