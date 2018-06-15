@@ -5,8 +5,8 @@
   <div class="page-banner-content">
     <h2 class="page-banner-title">Events</h2>
     <ul class="horizontal-list">
-      <li class="horizontal-list"><a class="page-banner-link" href="#">Upcoming Events</a></li>
-      <li class="horizontal-list"><a class="page-banner-link" href="#">Past Events</a></li>
+      <li class="horizontal-list"><a class="page-banner-link" href="#" id="upcoming-link">Upcoming Events</a></li>
+      <li class="horizontal-list"><a class="page-banner-link" href="#" id="past-link">Past Events</a></li>
     </ul>
   </div>
 </div>
@@ -14,8 +14,8 @@
 {% block content %}
 <p>Checkout <a href="https://www.meetup.com/Offbeat-Fun">Meetup</a> to see all events.</p>
 
-<h2>Upcoming Events</h2>
-<div id="upcomingevents"></div>
+<h2 id="event-title">Upcoming Events</h2>
+<div id="event-list"></div>
 {% endblock %}
 {% block script %}
 <script src="{{ url_for('static', filename='events.js') }}"></script>

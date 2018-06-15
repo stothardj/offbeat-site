@@ -127,6 +127,10 @@ li.horizontal-list:last-child {
     color: white;
 }
 
+.event-description {
+    overflow: hidden;
+}
+
 .photoreel {
     display: flex;
     overflow: hidden;
